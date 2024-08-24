@@ -1,0 +1,12 @@
+.input {
+  grid-area: input;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 16px;
+  & .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

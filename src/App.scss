@@ -1,0 +1,8 @@
+.App {
+  width: 100%;
+  display: grid;
+  grid-template-areas: "aside main";
+  grid-template-columns: 360px auto;
+  height: 100dvh;
+  overflow: hidden;
+}

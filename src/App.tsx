@@ -1,12 +1,14 @@
-import React from 'react';
-import {PageIndex} from "./pages/index";
+import "./App.scss";
+import { ChatItemList } from "./pages/ChatItemList/ChatItemList";
+import { RoutesContent } from "./pages/routes/RoutesContent";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <PageIndex />
+      <ChatItemList />
+      <RoutesContent />
     </div>
   );
-}
+};
 
 export default App;

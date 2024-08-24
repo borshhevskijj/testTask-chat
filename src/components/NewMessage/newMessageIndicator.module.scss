@@ -1,0 +1,10 @@
+@import "../../variables.scss";
+.newMessages {
+  display: flex;
+  justify-content: center;
+  width: calc(100% + 48px);
+  transform: translateX(-24px);
+  height: 24px;
+  background-color: $newMessages;
+  color: $lightBlue;
+}

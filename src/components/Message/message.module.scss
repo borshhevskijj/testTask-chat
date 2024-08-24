@@ -1,0 +1,23 @@
+@import "../../variables.scss";
+.messageDetails {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  gap: 4px;
+}
+.message {
+  display: flex;
+  gap: 8px;
+
+  & .messageDetails {
+    border-radius: 4px;
+    padding: 8px 12px;
+    background-color: $messageBackground;
+  }
+}
+.yourMessage {
+  justify-content: end;
+  & .messageDetails {
+    background-color: $myMessageBackground;
+  }
+}

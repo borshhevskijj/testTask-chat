@@ -1,0 +1,43 @@
+@import "../../variables.scss";
+@import "../../mixins.scss";
+.chatItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px 16px;
+  gap: 16px;
+  width: 100%;
+  cursor: pointer;
+  & > div {
+    max-width: calc(100% - 16px - 16px - 16px); // padding + gap
+  }
+  & header {
+    display: flex;
+    justify-content: space-between;
+    h3 {
+      @include text-ellipsis;
+    }
+  }
+  &:hover {
+    background-color: $hoverChat;
+  }
+}
+
+.chatItemActive {
+  background-color: $activeChat;
+  &:hover {
+    background-color: saturate($activeChat, 50%);
+  }
+}
+.chatItemInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.lastMessage {
+  display: flex;
+  max-width: 100%;
+  & p {
+    @include text-ellipsis;
+  }
+}

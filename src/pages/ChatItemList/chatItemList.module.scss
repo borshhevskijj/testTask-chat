@@ -1,0 +1,15 @@
+@import "../../variables.scss";
+.chatItemList {
+  grid-area: aside;
+  min-height: 100dvh;
+  border-right: 1px solid $bodyText;
+  position: relative;
+  ul {
+    height: calc(100dvh - 64px);
+    overflow-x: hidden;
+    overflow-y: auto;
+    &::-webkit-scrollbar {
+      width: 0px;
+    }
+  }
+}

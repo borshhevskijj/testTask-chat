@@ -1,0 +1,21 @@
+.main {
+  grid-area: main;
+}
+.messageList {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 30px;
+  padding: 24px;
+  height: calc(100dvh - 64px - 72px - 70px);
+  overflow-x: hidden;
+  overflow-y: auto;
+  &::-webkit-scrollbar {
+    width: 0px;
+  }
+}
+
+.headerWrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}

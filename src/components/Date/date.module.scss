@@ -1,0 +1,11 @@
+@import "../../variables.scss";
+.dateContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.date {
+  border-radius: 4px;
+  padding: 8px 12px;
+  background-color: $SystemMessageBackground;
+}

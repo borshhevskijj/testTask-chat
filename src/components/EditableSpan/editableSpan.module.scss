@@ -1,0 +1,18 @@
+.editableSpan {
+  display: block;
+  width: 100%;
+  padding: 10px 16px;
+  border: 1px solid black;
+
+  field-sizing: content;
+  max-height: 4lh;
+
+  color: #a19f9d;
+  border-radius: 4px;
+  overflow: auto;
+
+  &.placeholder::before {
+    content: "Type message";
+    pointer-events: none;
+  }
+}
