@@ -1,7 +1,6 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Header } from "./../../components/Header/Header";
-import { currentChatSlice } from "./../../api/slices/currentChat.service";
-import { useAppDispatch, useAppSelector } from "../../api/store";
+import { useAppSelector } from "../../api/store";
 import cl from "./messageList.module.scss";
 import { useParams } from "react-router-dom";
 import { useGetMessagesQuery } from "../../api/api";
@@ -15,7 +14,6 @@ import { Date } from "../../components/Date/Date";
 export const MessageList = () => {
   const { chatId: id } = useParams<{ chatId: string }>();
   const { data: messages, isLoading, isError } = useGetMessagesQuery(id!);
-  const dispatch = useAppDispatch();
   const currentChat = useAppSelector((state) => state.currentChat.chats)[id!];
 
   return (
