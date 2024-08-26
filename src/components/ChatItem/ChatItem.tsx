@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { Avatar } from "../Avatar";
 import cl from "./chatItem.module.scss";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { Time } from "../Time/Time";
 
 interface props {
@@ -14,6 +14,7 @@ interface props {
 
 export const ChatItem: FC<props> = ({ chatId, chatAvatar, chatLastMessage, time, title }) => {
   const navigate = useNavigate();
+  // const { chatId: chatIdInPath } = useParams() ?? "";
 
   const path = window.location.pathname; //костыль
   const chatIdInPath = path.split("/").pop(); //костыль

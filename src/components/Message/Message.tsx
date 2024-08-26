@@ -3,6 +3,7 @@ import { User } from "../../interface/user";
 import { Avatar } from "../Avatar";
 import cl from "./message.module.scss";
 import { Time } from "../Time/Time";
+import checkmark from "../../assets/icons/checkmark.svg";
 interface props {
   message: string;
   timestamp: number;
@@ -22,7 +23,10 @@ export const Message: FC<props> = ({ message, timestamp, user: { avatar, you, na
           </p>
         )}
         <p>{message}</p>
-        <Time timestamp={timestamp} />
+        <div className={cl.messageTime}>
+          <Time timestamp={timestamp} />
+          {you && <img src={checkmark} />}
+        </div>
       </div>
     </li>
   );

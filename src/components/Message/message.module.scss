@@ -14,6 +14,11 @@
     padding: 8px 12px;
     background-color: $messageBackground;
   }
+  .messageTime {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
 }
 .yourMessage {
   justify-content: end;

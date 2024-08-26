@@ -16,7 +16,6 @@ export const ChatItemList = () => {
         <ul>
           {data.response.map((chats) => {
             const { id, avatar, last_message, title } = chats;
-            console.log(chats);
 
             return (
               <ChatItem
